@@ -45,9 +45,9 @@ include './components/header.php';
       echo "<td>" .$date_added."</td>";
       echo "<td>
         
-      <form method ='POST' action=''>
-      <input  type='text' hidden name='user_mail' value='$user_email'>
-      <input type='submit'  data-name='$user_name' data-mail='$user_email' data-phone='$user_phone' data-date_added='$date_added' value='PRINT' name='print-user-btn' class='btn btn-success print-btn m-2'>
+      <form method ='POST' action='server.php'>
+      <input  type='text' hidden name='user_email' value='$user_email'>
+      <input type='submit' value='PRINT' name='print-user-details-btn' class='btn btn-success print-btn m-2'>
       </form>
       </td> </tr>";
       }
